@@ -3,7 +3,7 @@ from time import sleep
 import os
 c = 0
 menu = ''
-while menu != 'Nn':
+while menu != 'N':
     print('\033[32m-=\033[m'*30)
     print('                 \033[4;32mVOCÊ ESTA COM SORTE ?\033[m')
     print('\033[32m-=\033[m'*30)
@@ -93,7 +93,7 @@ while menu != 'Nn':
             print('\033[m\033[32m-=\033[m' * 30)
             print('\033[33mPARABÉNS VOCÊ ACERTOU O NUMERO É {} !'.format(num))
             print('\033[m\033[32m-=\033[m' * 30)
-            print('\033[33mVocê recebeu \033[32m+ R${}\033[m \033[33mna sua conta ! '.format(odd))
+            print('\033[33mVocê recebeu \033[32m+ R${:.2f}\033[m \033[33mna sua conta ! '.format(odd))
         #ERRANDO O NUMERO QUE A MAQUINA ESCOLHEU O VALOR APOSTADO É PERDIDO.
         else:
             print('\033[31mVOCÊ ERROU ! O NUMERO ESCOLHIDO FOI\033[m {}'.format(num))
@@ -101,10 +101,10 @@ while menu != 'Nn':
         print('\033[m\033[32m-=\033[m' * 30)
         print('DIGITE 1 PARA RETORNAR AO MENU')
         while True:
-            menu = input('DIGITE: ')
-            if menu.isdigit():
-                menu = int(menu)
-                if menu == 1:
+            retmenu = input('DIGITE: ')
+            if retmenu.isdigit():
+                retmenu = int(retmenu)
+                if retmenu == 1:
                     break
                 else:
                     print('\033[31mPor favor, digite um número válido\033[m')
@@ -117,4 +117,4 @@ while menu != 'Nn':
         print('\033[33mSaindo....')
         sleep(2)
         print('Até logo !\033[m')
-    break
+        break
