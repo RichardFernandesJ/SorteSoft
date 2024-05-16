@@ -4,6 +4,11 @@
 
 O **VOCÊ ESTA COM SORTE ?** é um software que você testa sua sorte como diz o nome por meio de advinhar um numero. Software composto somente pelo backend. 
 
+```Pasta Cod
+- Contem o codigo do software
+Pasta Project Working
+- Contem Print's da sua execução. ```
+
 Ele foi desenvolvido com as seguintes tecnologias:
 
 - **Backend:** Python 3
